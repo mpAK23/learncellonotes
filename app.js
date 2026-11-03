@@ -163,9 +163,6 @@ function initAudio() {
     }
 }
 
-// Preload samples right away so they are ready on first click
-initAudio();
-
 async function ensureAudio() {
     if (!audioStarted) {
         try {
@@ -646,3 +643,4 @@ els.tenorCheck.addEventListener('change', (e) => {
 // Init
 initFingerboard();
 pickRandomNote();
+initAudio();
